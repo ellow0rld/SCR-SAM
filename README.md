@@ -62,3 +62,15 @@ Use the respective notebooks to load the pre-trained weights and generate qualit
 * Segment Anything Model (SAM)
 * PEFT (for LoRA)
 * SimpleITK / Nibabel (for .nii.gz files)
+---
+
+## 📜 Citation
+If you find this work useful, please cite our manuscript:
+```bibtex
+@article{aravindan2026scrsam,
+  title={Spatial Continuity Regularisation for Hardware-Efficient 3D Medical Image Segmentation with 2D Vision Foundation Models},
+  author={Aravindan, Madhu Shree and S., Ramamoorthy},
+  journal={The Visual Computer},
+  year={2026},
+  note={Submitted for publication}
+}
