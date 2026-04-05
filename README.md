@@ -1,7 +1,7 @@
 # SCR-SAM: Spatial Continuity Regularisation for Hardware-Efficient 3D Medical Segmentation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://img.shields.io/badge/DOI-Pending-blue.svg)](https://zenodo.org/)
+[![DOI](https://zenodo.org/badge/1201725749.svg)](https://doi.org/10.5281/zenodo.19426119)
 
 This repository contains the official implementation of **SCR-SAM**, a lightweight longitudinal "tethering" strategy designed to bridge the dimensionality gap in 2D Vision Foundation Models (VFMs) for 3D medical volumes. 
 
