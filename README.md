@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/1201725749.svg)](https://doi.org/10.5281/zenodo.19426119)
+[![Open In Colab (BRaTS)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Pq1N6LtUpmWfKLJcv0sV_eiHi-UK4gGP?usp=sharing)
 
 This repository contains the official implementation of **SCR-SAM**, a lightweight longitudinal "tethering" strategy designed to bridge the dimensionality gap in 2D Vision Foundation Models (VFMs) for 3D medical volumes. 
 
@@ -34,18 +35,23 @@ To replicate our findings, please download the datasets and weights from the fol
 
 ## 🛠️ Usage Guidelines
 
-### 1. Training (KiTS 19)
+### 1. Interactive Demo (Google Colab)
+For immediate testing and visualization, we provide a ready-to-run Google Colab notebook. This includes the environment setup, weight loading, and inference for the BraTS 2021 dataset:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Pq1N6LtUpmWfKLJcv0sV_eiHi-UK4gGP?usp=sharing)
+
+### 2. Training (KiTS 19)
 The `KiTS_SCR_LoRA.ipynb` notebook provides a comprehensive end-to-end implementation. 
 * To train from scratch, ensure your data directory matches the paths in the notebook.
 * The script utilizes **LoRA** and our custom **SCR Loss** to ensure inter-slice continuity.
 
-### 2. Adaptation for BraTS 2021
+### 3. Adaptation for BraTS 2021
 While the BraTS notebook focuses on evaluation, the training logic is identical to the KiTS pipeline. To train on BraTS:
 1. Use the training loop architecture from the KiTS notebook.
 2. Update the `DataLoader` to handle the 4-channel MRI modality ($T1, T1ce, T2, FLAIR$) used in BraTS 2021.
 3. Adjust the intensity normalization to match MRI characteristics.
 
-### 3. Evaluation & Inference
+### 4. Evaluation & Inference
 Use the respective notebooks to load the pre-trained weights and generate qualitative results. The notebooks include "Smoothness Checks" for Coronal views to verify 3D consistency.
 
 ---
