@@ -37,7 +37,7 @@ To replicate our findings, please download the datasets and weights from the fol
 ### 1. Training (KiTS 19)
 The `KiTS_SCR_LoRA.ipynb` notebook provides a comprehensive end-to-end implementation. 
 * To train from scratch, ensure your data directory matches the paths in the notebook.
-* The script utilizes **LoRA (Rank=4)** and our custom **SCR Loss** to ensure inter-slice continuity.
+* The script utilizes **LoRA** and our custom **SCR Loss** to ensure inter-slice continuity.
 
 ### 2. Adaptation for BraTS 2021
 While the BraTS notebook focuses on evaluation, the training logic is identical to the KiTS pipeline. To train on BraTS:
