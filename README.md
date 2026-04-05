@@ -15,8 +15,8 @@ By applying **Spatial Continuity Regularisation (SCR)** and **LoRA** adaptation,
 * **Foundation Model Native:** Leverages the Segment Anything Model (SAM) zero-shot weights.
 
 ## 📂 Repository Structure
-* `KiTS_SCR_LoRA.ipynb`: Full pipeline for the KiTS 19 dataset (Data Loading, SCR Training, and Evaluation).
-* `BraTS_SCR_Evaluation.ipynb`: Evaluation and Inference pipeline for the BraTS 2021 dataset.
+* `SCR on KiTS.ipynb`: Full pipeline for the KiTS 19 dataset (Data Loading, SCR Training, and Evaluation).
+* `SCR on BRaTS.ipynb`: Evaluation and Inference pipeline for the BraTS 2021 dataset.
 * `README.md`: Usage guidelines and dataset links.
 
 ---
@@ -56,15 +56,3 @@ Use the respective notebooks to load the pre-trained weights and generate qualit
 * Segment Anything Model (SAM)
 * PEFT (for LoRA)
 * SimpleITK / Nibabel (for .nii.gz files)
-
----
-
-## 📜 Citation
-If you find this work useful, please cite our manuscript:
-```bibtex
-@article{aravindan2026scrsam,
-  title={Spatial Continuity Regularisation for Hardware-Efficient 3D Medical Image Segmentation with 2D Vision Foundation Models},
-  author={Aravindan, Madhu Shree},
-  journal={The Visual Computer},
-  year={2026}
-}
